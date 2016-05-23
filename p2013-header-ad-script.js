@@ -1,12 +1,12 @@
-// P2 Categories - JavaScript Document
-// since @1.2
+// 2013 Header Ad - JavaScript Document
+// since @1.0
 
-// append our #p2HeaderAd to the current #header
-var $p2HeaderAdContent = jQuery('#p2HeaderAd');
-jQuery('#header').append($p2HeaderAdContent);
+// append our #p2013HeaderAd to the current #header
+var $p2013HeaderAdContent = jQuery('#p2013HeaderAd');
+jQuery('#header').append($p2013HeaderAdContent);
 
 // make our ad visible via fadeIn - see http://api.jquery.com/fadeIn/
-jQuery('#p2HeaderAd').delay(1000).fadeIn('slow', function () {
+jQuery('#p2013HeaderAd').delay(1000).fadeIn('slow', function () {
 	// could add something here upon completion	
 });
 
@@ -16,6 +16,6 @@ jQuery('#p2HeaderAd').delay(1000).fadeIn('slow', function () {
    - use this function with document.ready in the head section
    - instead of fade in, just set the css to visible, like so
    
-   jQuery('#p2HeaderAd').css('visibility', 'visible');
+   jQuery('#p2013HeaderAd').css('visibility', 'visible');
    
 **************************************************************/
