@@ -1,0 +1,114 @@
+# Copyright (C) 2013 P2 Header Ad
+# This file is distributed under the same license as the P2 Header Ad package.
+msgid ""
+msgstr ""
+"Project-Id-Version: P2 Header Ad 1.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/p2-header-ad\n"
+"POT-Creation-Date: 2013-12-10 00:25:04+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-12-11 13:27-0500\n"
+"Last-Translator: Jay Versluis <versluis2000@yahoo.com>\n"
+"Language-Team: Andrew Kurtis - WebHostingClub.com <andrewk@webhostinghub."
+"com>\n"
+"X-Generator: Poedit 1.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+
+#: p2-header-ad.php:58
+msgid "You do not have sufficient privileges to access this page. Sorry!"
+msgstr ""
+"Usted no tiene suficientes privilegios para acceder a esta página. ¡Lo "
+"siento!"
+
+#: p2-header-ad.php:120
+msgid "P2 Header Advertising"
+msgstr "Publicidad del Encabezado P2 "
+
+#: p2-header-ad.php:122
+msgid ""
+"Enter some HTML in the box, and it will be displayed inside the P2 header."
+msgstr ""
+"Introduzca algo de HTML en la casilla, y se mostrará en el interior del "
+"encabezado P2"
+
+#: p2-header-ad.php:123
+msgid ""
+"Optimised for a 468x60 pixel advert. Other sizes may need a small CSS "
+"adjustment."
+msgstr ""
+"Optimizado para un anuncio de 468x60 píxeles. Otros tamaños pueden necesitar "
+"un pequeño ajuste en el CSS."
+
+#: p2-header-ad.php:132
+msgid "Would you like to display the ad for users that are logged in?"
+msgstr ""
+"¿Le gustaría mostrar el anuncio a los usuarios que han iniciado sesión?"
+
+#: p2-header-ad.php:135
+msgid "Untick the box to show the ad only to visitors."
+msgstr "Desmarque la casilla para mostrar el anuncio sólo a los visitantes."
+
+#: p2-header-ad.php:139
+msgid "Save Changes"
+msgstr "Salvar Cambios"
+
+#: p2-header-ad.php:141
+msgid "Use Sample Data"
+msgstr "Usar Datos de Ejemplo"
+
+#: p2-header-ad.php:145
+msgid "Check it out"
+msgstr "Probarlo"
+
+#: p2-header-ad.php:146
+msgid "This is what your advert will look like:"
+msgstr "Esto es como su anuncio se verá:"
+
+#: p2-header-ad.php:163
+msgid "This plugin was brought to you by"
+msgstr "Este plugin fue traído a usted por"
+
+#: p2-header-ad.php:188
+msgid "Your settings have been saved."
+msgstr "Sus ajustes se han guardado."
+
+#: p2-header-ad.php:197
+msgid "You are not using the P2 Theme."
+msgstr "Usted no está utilizando el Tema P2."
+
+#: p2-header-ad.php:198
+msgid "Please activate it first, otherwise results are unpredictable!"
+msgstr ""
+"Por favor, actívelo primero, de lo contrario ¡los resultados son "
+"impredecibles!"
+
+#: p2-header-ad.php:200
+msgid ""
+"You can <a href=\"http://wordpress.org/themes/p2\" target=\"_blank"
+"\">download P2 here</a>. Or if you have already installed it,"
+msgstr ""
+"Usted puede <a href=\"http://wordpress.org/themes/p2\" target=\"_blank"
+"\">bajar P2 aquí</a>. O si lo tiene ya instalado,"
+
+#: p2-header-ad.php:200
+msgid "activate it here"
+msgstr "actívelo aquí"
+
+#. Plugin Name of the plugin/theme
+msgid "P2 Header Ad"
+msgstr "Ad del Encabezado de P2"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://wpguru.co.uk"
+msgstr "http://wpguru.co.uk"
+
+#. Description of the plugin/theme
+msgid "inserts a block of ad code into the P2 Theme's Header"
+msgstr "inserta un bloque de código ad en el Encabezado del Tema P2"
+
+#. Author of the plugin/theme
+msgid "Jay Versluis"
+msgstr "Jay Versluis"

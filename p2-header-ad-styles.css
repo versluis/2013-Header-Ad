@@ -1,0 +1,12 @@
+/* P2 Header Ad Styles */
+
+#p2HeaderAd {
+	
+	/* undisplayed initially, then shown via jQuery once correctly positioned */
+	display: none;
+	position:absolute;
+	top: 45px; 
+	right: 0px;
+	z-index:10;
+	
+}
