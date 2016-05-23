@@ -1,6 +1,6 @@
-/* P2 Header Ad Styles */
+/* 2013 Header Ad Styles */
 
-#p2HeaderAd {
+#p2013HeaderAd {
 	
 	/* undisplayed initially, then shown via jQuery once correctly positioned */
 	display: none;
