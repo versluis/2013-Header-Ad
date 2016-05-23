@@ -31,7 +31,7 @@
 function p2013HeaderAd_menu() {
 	
 	// using a wrapper function (easy, but not good for adding JS later - hence not used)
-	add_theme_page('P2 Header Ad', 'P2 Header Ad', 'administrator', 'p2013-header-ad', 'p2013_header_ad_main');
+	add_theme_page('2013 Header Ad', '2013 Header Ad', 'administrator', 'p2013-header-ad', 'p2013_header_ad_main');
 }
 add_action('admin_menu', 'p2013HeaderAd_menu');
 
@@ -58,7 +58,7 @@ function p2013_header_ad_main  () {
       wp_die( __('You do not have sufficient privileges to access this page. Sorry!') );
     }	
 	
-	// check if we're actually using P2
+	// check if we're actually using TwentyThirteen
 	if (!function_exists('twentythirteen_setup')) {
 		p2013_header_ad_warning();
 	}
@@ -141,9 +141,9 @@ function p2013_header_ad_main  () {
     <form name="p2013HeaderAdForm" method="post" action="">
     <div class="wrap">
     <div id="icon-themes" class="icon32"><br></div>
-    <h2><?php _e('P2 Header Advertising', 'p2013-header-ad'); ?></h2>
+    <h2><?php _e('2013 Header Advertising', 'p2013-header-ad'); ?></h2>
     
-    <p><strong><?php _e('Enter some HTML in the box, and it will be displayed inside the P2 header.', 'p2013-header-ad'); ?> </strong></p>
+    <p><strong><?php _e('Enter some HTML in the box, and it will be displayed inside the TwentyThirteen header.', 'p2013-header-ad'); ?> </strong></p>
     <p><em><?php _e('Optimised for a 468x60 pixel advert. Other sizes may need a small CSS adjustment.', 'p2013-header-ad'); ?></em></p>
     
     <pre>
@@ -236,10 +236,10 @@ function p2013_header_ad_settings_saved () {
 function p2013_header_ad_warning () {
 	?>
     <div class="error">
-    <p><strong><?php _e('You are not using the P2 Theme.', 'p2013-header-ad'); ?><br>
+    <p><strong><?php _e('You are not using the TwentyThirteen Theme.', 'p2013-header-ad'); ?><br>
     <?php _e('Please activate it first, otherwise results are unpredictable!', 'p2013-header-ad'); ?><br><br>
     
-	<?php _e ('You can <a href="http://wordpress.org/themes/p2" target="_blank">download P2 here</a>. Or if you have already installed it,', 'p2013-header-ad'); ?> <a href="<?php echo admin_url( 'themes.php'); ?>"><?php _e('activate it here', 'p2013-header-ad'); ?></a>.</strong></p>
+	<?php _e ('You can <a href="https://wordpress.org/themes/twentythirteen/" target="_blank">download TwentyThirteen here</a>. Or if you have already installed it,', 'p2013-header-ad'); ?> <a href="<?php echo admin_url( 'themes.php'); ?>"><?php _e('activate it here', 'p2013-header-ad'); ?></a>.</strong></p>
     </div>
 	<?php
 } // end of settings saved
@@ -285,7 +285,7 @@ function p2013DisplayAdvert () {
 		}
 	}
 	
-	// check if we're actually using P2, then display the code
+	// check if we're actually using TwentyThirteen, then display the code
 	if (function_exists('twentythirteen_setup')) {
 		echo $p2013HeaderCode;
 	}
