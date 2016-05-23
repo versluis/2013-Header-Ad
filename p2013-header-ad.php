@@ -59,7 +59,7 @@ function p2013_header_ad_main  () {
     }	
 	
 	// check if we're actually using P2
-	if (!function_exists('p2013_title')) {
+	if (!function_exists('twentythirteen_setup')) {
 		p2013_header_ad_warning();
 	}
 	
@@ -286,7 +286,7 @@ function p2013DisplayAdvert () {
 	}
 	
 	// check if we're actually using P2, then display the code
-	if (function_exists('p2_title')) {
+	if (function_exists('twentythirteen_setup')) {
 		echo $p2013HeaderCode;
 	}
 }
