@@ -7,11 +7,11 @@
  * Author: Jay Versluis
  * Author URI: http://wpguru.co.uk
  * License: GPL2
- * Text Domain: 2013-header-ad
+ * Text Domain: p2013-header-ad
  * Domain Path: /languages
  */
  
-/*  Copyright 2013  Jay Versluis (email support@wpguru.co.uk)
+/*  Copyright 2016  Jay Versluis (email support@wpguru.co.uk)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -151,7 +151,7 @@ function p2013_header_ad_main  () {
     
     <?php 
     // option to display ad for logged in users
-    // @since 1.1
+    // @since 1.0
     ?>
     <p><strong><?php _e('Would you like to display the ad for users who are logged in?', 'p2013-header-ad'); ?></strong>&nbsp; 
     <input type="checkbox" value="<?php $p2013HeaderAdDisplayOption; ?>" name="p2013HeaderAdDisplayOption" <?php if ($p2013HeaderAdDisplayOption == 'yes') echo 'checked'; ?>/>
@@ -160,7 +160,7 @@ function p2013_header_ad_main  () {
 
      <?php 
     // option to display ads after content
-    // @since 1.5
+    // @since 1.0
     ?>
     <br><p><strong><?php _e('Display the same ad after the post content?', 'p2013-header-ad'); ?></strong>&nbsp; 
     <input type="checkbox" value="<?php $p2013HeaderShowAfterContent; ?>" name="p2013HeaderShowAfterContent" <?php if ($p2013HeaderShowAfterContent == 'yes') echo 'checked'; ?>/>
@@ -169,7 +169,7 @@ function p2013_header_ad_main  () {
     
     <?php 
     // display ads after content on front page
-    // @since 1.5
+    // @since 1.0
     ?>
     <p><strong><?php _e('Display after-content-ad on the front page?', 'p2013-header-ad'); ?></strong>&nbsp; 
     <input type="checkbox" value="<?php $p2013HeaderShowOnFrontPage; ?>" name="p2013HeaderShowOnFrontPage" <?php if ($p2013HeaderShowOnFrontPage == 'yes') echo 'checked'; ?>/>
@@ -259,26 +259,26 @@ function p2013DisplayAdvert () {
 	// use different top style depending on custom header
 	if (get_header_image() == '') {
 		// if no header image is present
-		$p2013HeaderCode = '<div id="p2013HeaderAd" style="top: 45px">' . $p2013HeaderCode . '</div>';
+		// $p2013HeaderCode = '<div id="p2013HeaderAd" style="top: 45px">' . $p2013HeaderCode . '</div>';
 	} else {
 		// if we have a header image
-		$p2013HeaderCode = '<div id="p2013HeaderAd" style="top: 30px">' . $p2013HeaderCode . '</div>';
+		// $p2013HeaderCode = '<div id="p2013HeaderAd" style="top: 30px">' . $p2013HeaderCode . '</div>';
 	}
 	
 	// don't display if we're in the admin interface
-	// since @1.2
+	// since @1.0
 	if (is_admin()) {
 		$p2013HeaderCode = '';
 	}
 	
 	// show ads to logged in users?
-	// since @1.1
+	// since @1.0
 	if (is_user_logged_in () && $p2013HeaderLoggedIn == 'no') {
 		$p2013HeaderCode = '';
 	}
 	
 	// don't display code for logged in eMember users
-	// since @1.4
+	// since @1.0
 	if (function_exists('wp_emember_is_member_logged_in')) {
 		if (wp_emember_is_member_logged_in() && $p2013HeaderLoggedIn == 'no') {
 			$p2013HeaderCode = '';
@@ -292,8 +292,8 @@ function p2013DisplayAdvert () {
 }
 add_action ('get_footer', 'p2013DisplayAdvert');
 
-// @since 1.5
 // adds the same advert underneath a single post
+// @since 1.0
 function p2013Header_ads_after_posts($content) {
 	
 	// we can either return $content (no advert) or $ad_content (with advert)
