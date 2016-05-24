@@ -1,1 +1,19 @@
-﻿P2 Header Ad==============Places a 468x80 pixel advert inside the header of Automattic's wonderful P2 Theme.### Installation and Usage- Either: Upload the entire folder to `/wp-content/plugins/` directory- Or: download the ZIP file, then head over to Plugins - Add New - Install, then browse to your file- Then: Activate it through the 'Plugins' menu in WordPressUnder Appearance - P2 Header Ad you'll find an admin interface to paste your HTML code### Further ReadingCheck out my release post for this plugin: http://wpguru.co.uk/2013/10/p2-header-advert/
+﻿2013 Header Ad
+==============
+
+Places an advert above the header of Automattic's wonderful TwentyThirteen Theme, as well as underneath posts (optional).
+
+
+### Installation and Usage
+
+- Either: Upload the entire folder to `/wp-content/plugins/` directory
+- Or: download the ZIP file, then head over to Plugins - Add New - Install, then browse to your file
+- Then: Activate it through the 'Plugins' menu in WordPress
+Under Appearance - 2013 Header Ad you'll find an admin interface to paste your HTML code
+
+The plugin works best when used with Google Adsense Respinsive Ads. 
+
+
+### Further Reading
+
+Check out my release post for this plugin: coming soon
