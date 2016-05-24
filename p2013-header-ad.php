@@ -143,8 +143,8 @@ function p2013_header_ad_main  () {
     <div id="icon-themes" class="icon32"><br></div>
     <h2><?php _e('2013 Header Advertising', 'p2013-header-ad'); ?></h2>
     
-    <p><strong><?php _e('Enter some HTML in the box, and it will be displayed inside the TwentyThirteen header.', 'p2013-header-ad'); ?> </strong></p>
-    <p><em><?php _e('Optimised for a 468x60 pixel advert. Other sizes may need a small CSS adjustment.', 'p2013-header-ad'); ?></em></p>
+    <p><strong><?php _e('Enter some HTML in the box, and it will be displayed above the TwentyThirteen header.', 'p2013-header-ad'); ?> </strong></p>
+    <p><em><?php _e('Works best when used with Google Adsense Responsive Ads.', 'p2013-header-ad'); ?></em></p>
     
     <pre>
     <textarea name="p2013HeaderCode" cols="80" rows="10" class="p2013CodeBox"><?php echo trim($p2013HeaderCode); ?></textarea></pre>
@@ -208,7 +208,7 @@ function p2013_header_ad_main  () {
     echo plugins_url('images/guru-header-2013.png', __FILE__);
     ?>" width="300"></a>
     </p>
-    <p><a href="http://wpguru.co.uk/2013/10/p2-header-advert/" target="_blank">Plugin by Jay Versluis</a> | <a href="https://github.com/versluis/P2-Header-Ad" target="_blank">Fork me on GitHub</a> | <a href="http://wphosting.tv" target="_blank">WP Hosting</a></p>
+    <p><a href="http://wpguru.co.uk/" target="_blank">Plugin by Jay Versluis</a> | <a href="https://github.com/versluis/2013-Header-Ad" target="_blank">Fork me on GitHub</a> | <a href="http://wphosting.tv" target="_blank">WP Hosting</a></p>
 	<?php
 } // end of main function
 
