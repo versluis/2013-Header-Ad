@@ -3,7 +3,7 @@
 
 // append our #p2013HeaderAd to the current #header
 var $p2013HeaderAdContent = jQuery('#p2013HeaderAd');
-jQuery('#header').append($p2013HeaderAdContent);
+jQuery('.site-header').append($p2013HeaderAdContent);
 
 // make our ad visible via fadeIn - see http://api.jquery.com/fadeIn/
 jQuery('#p2013HeaderAd').delay(1000).fadeIn('slow', function () {
