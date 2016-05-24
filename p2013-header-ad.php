@@ -290,7 +290,7 @@ function p2013DisplayAdvert () {
 		echo $p2013HeaderCode;
 	}
 }
-add_action ('get_footer', 'p2013DisplayAdvert');
+add_action ('get_header', 'p2013DisplayAdvert');
 
 // adds the same advert underneath a single post
 // @since 1.0
