@@ -86,7 +86,6 @@ function p2013_header_ad_main  () {
 			update_option ('p2013HeaderAdDisplayOption', 'no');
 		}
 		
-		// @since 1.5
 		// save option for ad after content
 		if (isset($_POST['p2013HeaderShowAfterContent'])) {
 			update_option ('p2013HeaderShowAfterContent', 'yes');
@@ -99,6 +98,13 @@ function p2013_header_ad_main  () {
 			update_option ('p2013HeaderShowOnFrontPage', 'yes');
 		} else {
 			update_option ('p2013HeaderShowOnFrontPage', 'no');
+		}
+		
+		// save option for ad on home page
+		if (isset($_POST['p2013HeaderShowOnHomePage'])) {
+			update_option ('p2013HeaderShowOnHomePage', 'yes');
+		} else {
+			update_option ('p2013HeaderShowOnHomePage', 'no');
 		}
 		
 		// save priority for ad after content
@@ -130,6 +136,7 @@ function p2013_header_ad_main  () {
 	$p2013HeaderShowAfterContent = get_option('p2013HeaderShowAfterContent');
 	$p2013HeaderShowOnFrontPage = get_option('p2013HeaderShowOnFrontPage');
 	$p2013HeaderPriority = get_option('p2013HeaderPriority');
+	$p2013HeaderShowOnHomePage = get_option ('p2013HeaderShowOnHomePage');
 	
 	///////////////////////////////////////
 	// MAIN AMDIN CONTENT SECTION
@@ -150,10 +157,20 @@ function p2013_header_ad_main  () {
     <textarea name="p2013HeaderCode" cols="80" rows="10" class="p2013CodeBox"><?php echo trim($p2013HeaderCode); ?></textarea></pre>
     
     <?php 
+	// option to suppress add on the front page
+	// @since 1.1
+	?>
+	<p><strong><?php _e('Disable ads on the front page?', 'p2013-header-ad'); ?></strong>&nbsp;
+    <input type="checkbox" value="<?php $p2013HeaderShowOnHomePage; ?>" name="p2013HeaderShowOnHomePage" <?php if ($p2013HeaderShowOnHomePage == 'yes') echo 'checked'; ?>/>
+    </p>
+    
+    <p><em><?php _e('When ticked, ads will be shown on single posts only.', 'p2013-header-ad'); ?></em></p>
+	
+	<?php
     // option to display ad for logged in users
     // @since 1.0
     ?>
-    <p><strong><?php _e('Would you like to display the ad for users who are logged in?', 'p2013-header-ad'); ?></strong>&nbsp; 
+    <br><p><strong><?php _e('Display ads for users who are logged in?', 'p2013-header-ad'); ?></strong>&nbsp; 
     <input type="checkbox" value="<?php $p2013HeaderAdDisplayOption; ?>" name="p2013HeaderAdDisplayOption" <?php if ($p2013HeaderAdDisplayOption == 'yes') echo 'checked'; ?>/>
     </p>
     <p><em><?php _e('Untick the box to show ads only to visitors.', 'p2013-header-ad'); ?></em></p>
@@ -162,7 +179,7 @@ function p2013_header_ad_main  () {
     // option to display ads after content
     // @since 1.0
     ?>
-    <br><p><strong><?php _e('Display the same ad after the post content?', 'p2013-header-ad'); ?></strong>&nbsp; 
+    <br><p><strong><?php _e('Display ads after the post content?', 'p2013-header-ad'); ?></strong>&nbsp; 
     <input type="checkbox" value="<?php $p2013HeaderShowAfterContent; ?>" name="p2013HeaderShowAfterContent" <?php if ($p2013HeaderShowAfterContent == 'yes') echo 'checked'; ?>/>
     </p>
     <p><em><?php _e('', 'p2013-header-ad'); ?></em></p>
@@ -171,7 +188,7 @@ function p2013_header_ad_main  () {
     // display ads after content on front page
     // @since 1.0
     ?>
-    <p><strong><?php _e('Display after-content-ad on the front page?', 'p2013-header-ad'); ?></strong>&nbsp; 
+    <p><strong><?php _e('Display after-content-ads on the front page?', 'p2013-header-ad'); ?></strong>&nbsp; 
     <input type="checkbox" value="<?php $p2013HeaderShowOnFrontPage; ?>" name="p2013HeaderShowOnFrontPage" <?php if ($p2013HeaderShowOnFrontPage == 'yes') echo 'checked'; ?>/>
     </p>
     <p><em><?php _e('Works best with longer posts, but looks cluttered with short posts and status updates.', 'p2013-header-ad'); ?></em></p>
