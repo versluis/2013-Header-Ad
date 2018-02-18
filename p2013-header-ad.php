@@ -302,6 +302,12 @@ function p2013DisplayAdvert () {
 		}
 	}
 	
+	// do we want the ad on the front page?
+	// since @1.1
+	if (is_home() && get_option('p2013HeaderShowOnHomePage')) {
+		$p2013HeaderCode = '';
+	}
+	
 	// check if we're actually using TwentyThirteen, then display the code
 	if (function_exists('twentythirteen_setup')) {
 		echo $p2013HeaderCode;
