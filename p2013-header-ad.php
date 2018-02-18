@@ -3,7 +3,7 @@
  * Plugin Name: 2013 Header Ad
  * Plugin URI: http://wpguru.co.uk
  * Description: inserts a block of ad code into the TwentyThirteen Theme's Header and after Posts
- * Version: 1.0
+ * Version: 1.1 Beta
  * Author: Jay Versluis
  * Author URI: http://wpguru.co.uk
  * License: GPL2
