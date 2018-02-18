@@ -3,16 +3,16 @@ Contributors: versluis
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=34B76TPRWMWAE
 Tags: p2, advert, ad, header, code
 Requires at least: 3.3
-Tested up to: 4.0
-Stable tag: 1.5
+Tested up to: 4.9.4
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Places a 468x80 pixel advert inside the header of Automattic's wonderful P2 Theme.
+Inserts an advert to Automattic's wonderful TwentyThirteen Theme.
 
 == Description ==
 
-Once installed, head over to Appearance - P2 Header Ad and paste your ad code into the box. 
+Once installed, head over to Appearance - 2013 Header Ad and paste your ad code into the box. Works best with Google's responsive ads as they resize automatically.
 
 Features:
 
@@ -20,9 +20,11 @@ Features:
 * option to hide the ad for logged-in users
 * option to hide the ad for logged-in WP eMember users
 * works with and without a header image
+* option to show an ad at the very top of the screen
 * option to show the same ad after the post content
+* option to suppress ads on the home/front page
 
-I've optimised the plugin for a 468x80 pixel ad. Other sizes will work but may require your own CSS tweaks to make them look right.
+I've optimised the plugin for a 468x80 pixel ad, but I found that using responsive ad code works very well as it resizes on the fly.
 
 
 == Installation ==
@@ -38,7 +40,7 @@ I've optimised the plugin for a 468x80 pixel ad. Other sizes will work but may r
 
 = I'm using a different ad size than 468x80 pixels. How do I tweak the CSS? =
  
-P2 Header Ad will wrap your code inside a DIV tag with the ID "p2HeaderAd". Simply re-position by targeting this ID.
+2013 Header Ad will wrap your code inside a DIV tag with the ID "p2HeaderAd". Simply re-position by targeting this ID.
 
 You can do this either in your Theme's styles.css file, or tweak p2-header-ad-styles.css inside the plugin's main directory.
 
@@ -70,8 +72,8 @@ I may make this an option in the admin interface in a future update.
 
 == Screenshots ==
 
-1. see your ad displayed on the P2 front page
-1. the Admin Interface let's you paste HTML code quickly and easily (under Appearance - P2 Header ad)
+1. see your ad displayed on the TwentyThirteen front page
+1. the Admin Interface let's you paste HTML code quickly and easily (under Appearance - 2013 Header ad)
 
 
 == Changelog ==
