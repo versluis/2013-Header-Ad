@@ -316,7 +316,7 @@ function p2013DisplayAdvert () {
 	
 	// do we want the ad on the front page?
 	// since @1.1
-	if (is_home() && get_option('p2013HeaderShowOnHomePage') != 'no') {
+	if (is_front_page() && get_option('p2013HeaderShowOnHomePage') != 'no') {
 		$p2013HeaderCode = '';
 	}
 	
