@@ -186,14 +186,14 @@ function p2013_header_ad_main  () {
     <h2>Front Page Options</h2>
     
     <?php 
-	// option to suppress add on the front page
+	// option to suppress ads on the front page
 	// @since 1.1
 	?>
-	<p><strong><?php _e('Disable ads on the front page?', 'p2013-header-ad'); ?></strong>&nbsp;
+	<p><strong><?php _e('Disable header ad on the front page?', 'p2013-header-ad'); ?></strong>&nbsp;
     <input type="checkbox" value="<?php $p2013HeaderShowOnHomePage; ?>" name="p2013HeaderShowOnHomePage" <?php if ($p2013HeaderShowOnHomePage == 'yes') echo 'checked'; ?>/>
     </p>
     
-    <p><em><?php _e('When ticked, ads will be shown on single posts only.', 'p2013-header-ad'); ?></em></p>
+    <p><em><?php _e('When ticked, the header ad will be shown on single posts only.', 'p2013-header-ad'); ?></em></p>
 	
     
     <?php 
@@ -316,7 +316,7 @@ function p2013DisplayAdvert () {
 	
 	// do we want the ad on the front page?
 	// since @1.1
-	if (is_home() && get_option('p2013HeaderShowOnHomePage')) {
+	if (is_home() && get_option('p2013HeaderShowOnHomePage') != 'no') {
 		$p2013HeaderCode = '';
 	}
 	
