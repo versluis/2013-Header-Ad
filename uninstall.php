@@ -26,6 +26,7 @@ if (!defined('WP_UNINSTALL_PLUGIN')) exit();
 	delete_option ('p2013HeaderShowAfterContent');
 	delete_option ('p2013HeaderShowOnFrontpage');
 	delete_option ('p2013HeaderPriority');
+	delete_option ('p2013HeaderShowOnHomePage');
 
 // Thanks for using this plugin
 // If you'd like to try again someday check out http://wpguru.co.uk where it lives and grows
